@@ -7,6 +7,7 @@ end
 get '/log/*' do
 	params[:splat]
 	File.open("events.txt", "w"){|event| event.puts params[:splat]}
+	"listenign for event logs"
 end 
 
 post '/events' do 
