@@ -22,6 +22,6 @@ get '/form' do
 end 
 
 post '/form' do 
-	"you said params[:message]"
+	"you said #{params[:message]}"
 end 
 	
